@@ -1,0 +1,24 @@
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<sc<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129563010-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129563010-1');
+</script>
+</head>
+
+<body ID="body1">
+<header>
+<Nav>
+	<div class="scrollmenu">
+	<!--tout changement de style dans cette page se fait dans la feuille CSS-->
+<div id="date" style="margin-top:4px;color:white;font-size:10">
+<p> Vous avez visité ce site le : </p>
+	<script type="text/javascript" language="javascript"> 
+d = new Date(); 
+document.write(d.toLocaleDateString()+'  '+d.toLocaleTimeString()); 
+</script>
+</div>

@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Voyage en Chine</title>
+	<link rel="icon" href="icontravel.ico">
+	<meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	
+</head>
+
+<body ID="body1">
+
+<header>
+
+<Nav>
+	<div class="navbar" style= "font-family:verdana;">
+	
+</br>
+		<a class="active" href='index.html'>Home</a>
+		<a href='beijing.html'>Beijing</a>
+		<a href='shanghai.html'>Shanghai</a>
+		<a href='guangzhou.html'>Guangzhou</a>
+		<a href='chengdu.html'>Chengdu</a>
+		<a href='hangzhou.html'>Hangzhou</a>
+		<a href='infos.html'>Informations</a>
+	</div>
+</nav>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="china1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="beijing.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="shanghai.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="guangzhou.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="chengdu.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="hangzhou.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+ 
+  <div class="row">
+    <div class="column" style= "font-family:verdana;">
+      <img class="demo cursor" src="china1.jpg" style="width:100%" onclick="currentSlide(1)" alt="La Chine">
+    </div>
+    <div class="column"> 
+      <img class="demo cursor" src="beijing.jpg" style="width:100%" onclick="currentSlide(2)" alt="Beijing Duck">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="shanghai.jpg" style="width:100%" onclick="currentSlide(3)" alt="Shanghai Xiaolongbao">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="guangzhou.jpg" style="width:100%" onclick="currentSlide(4)" alt="Guangzhou Le dimsum">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="chengdu.jpg" style="width:100%" onclick="currentSlide(5)" alt="Chengdu Yuxiangqiezi">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="hangzhou.jpg" style="width:100%" onclick="currentSlide(6)" alt="Hangzhou Dongporou">
+    </div>
+  </div>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</header>
+	<section>
+		<article ID="intro">
+		Depuis son ouverture au monde au début des années 90, la Chine n’a cessé d’impressionner mais aussi de susciter la curiosité. Commencez par l’une des destinations phares comme Pékin qui propose de nombreuses attractions (Grande Muraille, Cité Interdite, Tian’anmen), ou alors Shanghai...
+
+Vous êtes bienvenue de découvrir ce que bon vous semble en Chine, parce que la Chine est tellemense qu'il y a trop de sites touristiques à joeur.
+		</article>
+	</section>
+	
+<h1>Les villes de Chine</h1>
+	<article ID="text">
+	Il y a superficie et population des 22 provinces, 5 régions autonomes, 4 municipalités et 2 Régions administratives spéciales de la Chine. Nous allez voir 5 villes en chine. On va vous présenter des 5 villes pour voir une partie de beauté de Chine.
+	<ul>
+	<li>Beijing</li>
+	<li>Shanghai</li>
+	<li>Guangzhou</li>
+	<li>Chengdu</li>
+	<li>Hangzhou<hr></li>
+</ul>
+	</article>	
+	
+	<footer>
+	<p style= "font-family:verdana;">Le total de notre visite:</p>
+	 <a href="http://www.reliablecounter.com" target="_blank"><img src="https://www.reliablecounter.com/count.php?page=131215871&digit=style/plain/1/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://www.reliablecounter.com/blog/importance-life-insurance-working-women" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">reliablecounter.com</a>
+  <p style= "font-family:verdana;">Posted by: Wen<br>Ce site est pour le but Educatif</p>
+	</footer>
+
+
+</body>
+</html>
